@@ -5,7 +5,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StripeTerminalProvider } from '@stripe/stripe-terminal-react-native';
 import { ErrorReader } from './components/Reader';
-import { Intro } from './components/steps/Intro';
+import { Intro } from './components/Initialize';
 const Stack = createNativeStackNavigator();
 
 export default function App() {
