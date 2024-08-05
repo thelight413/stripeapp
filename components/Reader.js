@@ -7,7 +7,6 @@ import {
   Text,
   View
 } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
 
 export const ErrorReader = ({route}) => {
   const navigation = useNavigation();
@@ -53,18 +52,16 @@ export const ErrorReader = ({route}) => {
     }else{
       console.log('not initialized');
     }
-  },[isInitialized,discoverReaders])
+  },[discoverReaders])
   
 
   
   return (
-    <SafeAreaView style={styles.container}>
       <View>
          <Text style={{color:'black'}}>{text}</Text>
          <Text style={{color: 'red'}}>{error}</Text>
 
       </View>
-    </SafeAreaView>
   );
 };
 const styles = StyleSheet.create({
